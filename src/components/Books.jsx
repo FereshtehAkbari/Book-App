@@ -47,7 +47,7 @@ function Books() {
           <div className={styles.favorite}>
             <h4>Favorites</h4>
             {liked.map((book) => (
-              <SideCard key={book.id} />
+              <SideCard key={book.id} data={book} />
             ))}
           </div>
         )}
